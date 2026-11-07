@@ -1,5 +1,5 @@
 # Use a imagem oficial do Ubuntu como base
-FROM ubuntu:latest
+FROM ubuntu:24.04
 
 # Mantenedor da imagem (opcional)
 LABEL maintainer="DSA"
