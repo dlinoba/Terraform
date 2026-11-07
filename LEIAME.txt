@@ -1,0 +1,18 @@
+# Instruções do Projeto 1
+
+# Abra o terminal ou prompt de comando e navegue até a pasta
+
+# Execute o comando abaixo para criar a imagem Docker
+
+docker build -t dsa-terraform-image:p1 .
+
+# Execute o comando abaixo para criar o container Docker
+
+docker run -dit --name dsa-p1 -v ./IaC:/iac dsa-terraform-image:p1 /bin/bash
+
+Dentro do container execute aws configure
+e informe suas credenciais.
+
+# Verifique as versões do Terraform e do AWS CLI com os comandos abaixo
+terraform version
+aws --version
